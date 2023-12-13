@@ -159,5 +159,5 @@ else:
     pred_label = "not be a LinkedIn user"
 
 container = st.container(border=True)
-container.write(f"This person is predected to**{pred_label}** with {pred_percent[0]}% probability")
+container.write(f"This person is predected to**{pred_label}** with {pred_percent[0.00]}% probability")
 
