@@ -118,20 +118,26 @@ binary_options_df = pd.DataFrame({
     'female': [1,0],
 })
 #     parent (binary)
-parent= st.selectbox(
+
+parent = st.selectbox(
     'Are they a parent? 1=Yes, 0=No',
-    ss['parent']
-)
+    ('1', '0'))
+
+st.write('You selected:', option)
+
 #     married (binary)
 married = st.selectbox(
     'Are they married? 1=Yes, 0=No',
-    ss['married']
-)
+    ('1', '0'))
+
+st.write('You selected:', option)
+
 #     female (binary)
 female = st.selectbox(
     'Are they female? 1=Yes, 0=No',
-    ss['female']
-)
+    ('1', '0'))
+
+st.write('You selected:', option)
 #     age (numeric)
 
 age= st.slider(label="Select Age",
@@ -140,7 +146,7 @@ age= st.slider(label="Select Age",
     value=30)
 
 
-input_data = pd.DataFram([[income, education, parent, married, female, age]],
+input_data = pd.DataFrame([[income, education, parent, married, female, age]],
     columns=["income", "education", "parent", "married", "female", "age"])
 
 pred_result = Lr1.predict(input_data)
