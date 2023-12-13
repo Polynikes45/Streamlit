@@ -123,21 +123,21 @@ parent = st.selectbox(
     'Are they a parent? 1=Yes, 0=No',
     ('1', '0'))
 
-st.write('You selected:', option)
+st.write('You selected:', parent)
 
 #     married (binary)
 married = st.selectbox(
     'Are they married? 1=Yes, 0=No',
     ('1', '0'))
 
-st.write('You selected:', option)
+st.write('You selected:', married)
 
 #     female (binary)
 female = st.selectbox(
     'Are they female? 1=Yes, 0=No',
     ('1', '0'))
 
-st.write('You selected:', option)
+st.write('You selected:', female)
 #     age (numeric)
 
 age= st.slider(label="Select Age",
