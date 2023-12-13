@@ -100,7 +100,7 @@ Income_options = ["Less than $10,000", "10 to under $20,000", "20 to under $30,0
 
 Income_map = {opt: idx + 1 for idx, opt in enumerate(Income_options)}
 
-income_box = st.selectbox("Select Income Level", options=Income_options)
+Income_box = st.selectbox("Select Income Level", options=Income_options)
 
 income = Income_map.get(Income_box, 0)
 
