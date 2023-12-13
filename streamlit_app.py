@@ -102,7 +102,7 @@ Income_map = {opt: idx + 1 for idx, opt in enumerate(Income_options)}
 
 income_box = st.selectbox("Select Income Level", options=Income_options)
 
-income = Income_map.get(Income_map, 0)
+income = Income_map.get(Income_box, 0)
 
 Education_options = ["1 Less than high school (Grades 1-8 or no formal schooling)", "High school incomplete (Grades 9-11 or Grade 12 with NO diploma)", "High school graduate (Grade 12 with diploma or GED certificate)", "Some college, no degree (includes some community college)", "Two-year associate degree from a college or university", "Four-year college or university degree/Bachelorâs degree (e.g., BS, BA, AB)", "Some postgraduate or professional schooling, no postgraduate degree (e.g. some graduate school)", "Postgraduate or professional degree, including masterâs, doctorate, medical or law degree (e.g., MA, MS, PhD, MD, JD)"]
 
@@ -110,7 +110,7 @@ Education_map = {opt: idx + 1 for idx, opt in enumerate(Education_options)}
 
 Education_box = st.selectbox("Select Education Level", options=Education_options)
 
-education = Education_map.get(Education_map, 0)
+education = Education_map.get(Education_box, 0)
 
 binary_options_df = pd.DataFrame({
     'parent': [1,0],
