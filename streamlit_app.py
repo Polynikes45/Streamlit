@@ -7,9 +7,9 @@ s.head(10)
 ##Import Packages
 import pandas as pd
 import numpy as np
-import matplotlib.pyplot as plt
-import seaborn as sns
-import altair as alt
+##import matplotlib.pyplot as plt
+##import seaborn as sns
+##import altair as alt
 from sklearn.cluster import KMeans
 from sklearn.linear_model import LogisticRegression
 from sklearn.model_selection import train_test_split
